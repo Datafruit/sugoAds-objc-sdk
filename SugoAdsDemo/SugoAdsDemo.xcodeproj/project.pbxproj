@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9BD92FDA2228D90A00BF304F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD92FD92228D90A00BF304F /* AppDelegate.m */; };
+		9BD92FDD2228D90A00BF304F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD92FDC2228D90A00BF304F /* ViewController.m */; };
+		9BD92FE02228D90A00BF304F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BD92FDE2228D90A00BF304F /* Main.storyboard */; };
+		9BD92FE22228D90B00BF304F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BD92FE12228D90B00BF304F /* Assets.xcassets */; };
+		9BD92FE52228D90B00BF304F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BD92FE32228D90B00BF304F /* LaunchScreen.storyboard */; };
+		9BD92FE82228D90B00BF304F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD92FE72228D90B00BF304F /* main.m */; };
+		9BD930122228DB2D00BF304F /* Pods_SugoAdsDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2A4F1DF934061E557290F12 /* Pods_SugoAdsDemo.framework */; };
+		9BD930162228DB8A00BF304F /* SugoAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BD930152228DB8A00BF304F /* SugoAds.framework */; };
+		9BD930172228DB8A00BF304F /* SugoAds.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9BD930152228DB8A00BF304F /* SugoAds.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9BD9301B2228E17700BF304F /* ShowImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD9301A2228E17700BF304F /* ShowImageController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9BD92FEE2228D90B00BF304F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BD92FCD2228D90A00BF304F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BD92FD42228D90A00BF304F;
+			remoteInfo = SugoAdsDemo;
+		};
+		9BD92FF92228D90B00BF304F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BD92FCD2228D90A00BF304F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BD92FD42228D90A00BF304F;
+			remoteInfo = SugoAdsDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9BD930182228DB8A00BF304F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9BD930172228DB8A00BF304F /* SugoAds.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0DB2B56023BECEA02AD5B7F1 /* Pods-SugoAdsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SugoAdsDemo.release.xcconfig"; path = "Target Support Files/Pods-SugoAdsDemo/Pods-SugoAdsDemo.release.xcconfig"; sourceTree = "<group>"; };
+		0F8D64D056C53AD9A5625E3A /* Pods-SugoAdsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SugoAdsDemo.debug.xcconfig"; path = "Target Support Files/Pods-SugoAdsDemo/Pods-SugoAdsDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		9BD92FD52228D90A00BF304F /* SugoAdsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SugoAdsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BD92FD82228D90A00BF304F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9BD92FD92228D90A00BF304F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9BD92FDB2228D90A00BF304F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9BD92FDC2228D90A00BF304F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9BD92FDF2228D90A00BF304F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9BD92FE12228D90B00BF304F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9BD92FE42228D90B00BF304F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9BD92FE62228D90B00BF304F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BD92FE72228D90B00BF304F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9BD92FED2228D90B00BF304F /* SugoAdsDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SugoAdsDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BD92FF82228D90B00BF304F /* SugoAdsDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SugoAdsDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BD930152228DB8A00BF304F /* SugoAds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SugoAds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BD930192228E17700BF304F /* ShowImageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowImageController.h; sourceTree = "<group>"; };
+		9BD9301A2228E17700BF304F /* ShowImageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowImageController.m; sourceTree = "<group>"; };
+		C2A4F1DF934061E557290F12 /* Pods_SugoAdsDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SugoAdsDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9BD92FD22228D90A00BF304F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BD930122228DB2D00BF304F /* Pods_SugoAdsDemo.framework in Frameworks */,
+				9BD930162228DB8A00BF304F /* SugoAds.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BD92FEA2228D90B00BF304F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BD92FF52228D90B00BF304F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1136D40A2703C8FBC26FB189 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F8D64D056C53AD9A5625E3A /* Pods-SugoAdsDemo.debug.xcconfig */,
+				0DB2B56023BECEA02AD5B7F1 /* Pods-SugoAdsDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8C369CAE1CD36CC3CB636513 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2A4F1DF934061E557290F12 /* Pods_SugoAdsDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9BD92FCC2228D90A00BF304F = {
+			isa = PBXGroup;
+			children = (
+				9BD930152228DB8A00BF304F /* SugoAds.framework */,
+				9BD92FD72228D90A00BF304F /* SugoAdsDemo */,
+				9BD92FD62228D90A00BF304F /* Products */,
+				1136D40A2703C8FBC26FB189 /* Pods */,
+				8C369CAE1CD36CC3CB636513 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9BD92FD62228D90A00BF304F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9BD92FD52228D90A00BF304F /* SugoAdsDemo.app */,
+				9BD92FED2228D90B00BF304F /* SugoAdsDemoTests.xctest */,
+				9BD92FF82228D90B00BF304F /* SugoAdsDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9BD92FD72228D90A00BF304F /* SugoAdsDemo */ = {
+			isa = PBXGroup;
+			children = (
+				9BD92FD82228D90A00BF304F /* AppDelegate.h */,
+				9BD92FD92228D90A00BF304F /* AppDelegate.m */,
+				9BD92FDB2228D90A00BF304F /* ViewController.h */,
+				9BD92FDC2228D90A00BF304F /* ViewController.m */,
+				9BD92FDE2228D90A00BF304F /* Main.storyboard */,
+				9BD92FE12228D90B00BF304F /* Assets.xcassets */,
+				9BD92FE32228D90B00BF304F /* LaunchScreen.storyboard */,
+				9BD92FE62228D90B00BF304F /* Info.plist */,
+				9BD92FE72228D90B00BF304F /* main.m */,
+				9BD930192228E17700BF304F /* ShowImageController.h */,
+				9BD9301A2228E17700BF304F /* ShowImageController.m */,
+			);
+			path = SugoAdsDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9BD92FD42228D90A00BF304F /* SugoAdsDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BD930012228D90B00BF304F /* Build configuration list for PBXNativeTarget "SugoAdsDemo" */;
+			buildPhases = (
+				BDAD6B914A593906D425A671 /* [CP] Check Pods Manifest.lock */,
+				9BD92FD12228D90A00BF304F /* Sources */,
+				9BD92FD22228D90A00BF304F /* Frameworks */,
+				9BD92FD32228D90A00BF304F /* Resources */,
+				9BD930182228DB8A00BF304F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SugoAdsDemo;
+			productName = SugoAdsDemo;
+			productReference = 9BD92FD52228D90A00BF304F /* SugoAdsDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9BD92FEC2228D90B00BF304F /* SugoAdsDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BD930042228D90B00BF304F /* Build configuration list for PBXNativeTarget "SugoAdsDemoTests" */;
+			buildPhases = (
+				9BD92FE92228D90B00BF304F /* Sources */,
+				9BD92FEA2228D90B00BF304F /* Frameworks */,
+				9BD92FEB2228D90B00BF304F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BD92FEF2228D90B00BF304F /* PBXTargetDependency */,
+			);
+			name = SugoAdsDemoTests;
+			productName = SugoAdsDemoTests;
+			productReference = 9BD92FED2228D90B00BF304F /* SugoAdsDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9BD92FF72228D90B00BF304F /* SugoAdsDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BD930072228D90B00BF304F /* Build configuration list for PBXNativeTarget "SugoAdsDemoUITests" */;
+			buildPhases = (
+				9BD92FF42228D90B00BF304F /* Sources */,
+				9BD92FF52228D90B00BF304F /* Frameworks */,
+				9BD92FF62228D90B00BF304F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BD92FFA2228D90B00BF304F /* PBXTargetDependency */,
+			);
+			name = SugoAdsDemoUITests;
+			productName = SugoAdsDemoUITests;
+			productReference = 9BD92FF82228D90B00BF304F /* SugoAdsDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9BD92FCD2228D90A00BF304F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = sugoio;
+				TargetAttributes = {
+					9BD92FD42228D90A00BF304F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					9BD92FEC2228D90B00BF304F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 9BD92FD42228D90A00BF304F;
+					};
+					9BD92FF72228D90B00BF304F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 9BD92FD42228D90A00BF304F;
+					};
+				};
+			};
+			buildConfigurationList = 9BD92FD02228D90A00BF304F /* Build configuration list for PBXProject "SugoAdsDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9BD92FCC2228D90A00BF304F;
+			productRefGroup = 9BD92FD62228D90A00BF304F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9BD92FD42228D90A00BF304F /* SugoAdsDemo */,
+				9BD92FEC2228D90B00BF304F /* SugoAdsDemoTests */,
+				9BD92FF72228D90B00BF304F /* SugoAdsDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9BD92FD32228D90A00BF304F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BD92FE52228D90B00BF304F /* LaunchScreen.storyboard in Resources */,
+				9BD92FE22228D90B00BF304F /* Assets.xcassets in Resources */,
+				9BD92FE02228D90A00BF304F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BD92FEB2228D90B00BF304F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BD92FF62228D90B00BF304F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BDAD6B914A593906D425A671 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SugoAdsDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9BD92FD12228D90A00BF304F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BD9301B2228E17700BF304F /* ShowImageController.m in Sources */,
+				9BD92FDD2228D90A00BF304F /* ViewController.m in Sources */,
+				9BD92FE82228D90B00BF304F /* main.m in Sources */,
+				9BD92FDA2228D90A00BF304F /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BD92FE92228D90B00BF304F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BD92FF42228D90B00BF304F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9BD92FEF2228D90B00BF304F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9BD92FD42228D90A00BF304F /* SugoAdsDemo */;
+			targetProxy = 9BD92FEE2228D90B00BF304F /* PBXContainerItemProxy */;
+		};
+		9BD92FFA2228D90B00BF304F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9BD92FD42228D90A00BF304F /* SugoAdsDemo */;
+			targetProxy = 9BD92FF92228D90B00BF304F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9BD92FDE2228D90A00BF304F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BD92FDF2228D90A00BF304F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9BD92FE32228D90B00BF304F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BD92FE42228D90B00BF304F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9BD92FFF2228D90B00BF304F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9BD930002228D90B00BF304F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9BD930022228D90B00BF304F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F8D64D056C53AD9A5625E3A /* Pods-SugoAdsDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5PCYP5P3P9;
+				INFOPLIST_FILE = SugoAdsDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sugoio.SugoAdsDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9BD930032228D90B00BF304F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DB2B56023BECEA02AD5B7F1 /* Pods-SugoAdsDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5PCYP5P3P9;
+				INFOPLIST_FILE = SugoAdsDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sugoio.SugoAdsDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9BD930052228D90B00BF304F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5PCYP5P3P9;
+				INFOPLIST_FILE = SugoAdsDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sugoio.SugoAdsDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SugoAdsDemo.app/SugoAdsDemo";
+			};
+			name = Debug;
+		};
+		9BD930062228D90B00BF304F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5PCYP5P3P9;
+				INFOPLIST_FILE = SugoAdsDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sugoio.SugoAdsDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SugoAdsDemo.app/SugoAdsDemo";
+			};
+			name = Release;
+		};
+		9BD930082228D90B00BF304F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5PCYP5P3P9;
+				INFOPLIST_FILE = SugoAdsDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sugoio.SugoAdsDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SugoAdsDemo;
+			};
+			name = Debug;
+		};
+		9BD930092228D90B00BF304F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5PCYP5P3P9;
+				INFOPLIST_FILE = SugoAdsDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sugoio.SugoAdsDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SugoAdsDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9BD92FD02228D90A00BF304F /* Build configuration list for PBXProject "SugoAdsDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BD92FFF2228D90B00BF304F /* Debug */,
+				9BD930002228D90B00BF304F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BD930012228D90B00BF304F /* Build configuration list for PBXNativeTarget "SugoAdsDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BD930022228D90B00BF304F /* Debug */,
+				9BD930032228D90B00BF304F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BD930042228D90B00BF304F /* Build configuration list for PBXNativeTarget "SugoAdsDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BD930052228D90B00BF304F /* Debug */,
+				9BD930062228D90B00BF304F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BD930072228D90B00BF304F /* Build configuration list for PBXNativeTarget "SugoAdsDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BD930082228D90B00BF304F /* Debug */,
+				9BD930092228D90B00BF304F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9BD92FCD2228D90A00BF304F /* Project object */;
+}
