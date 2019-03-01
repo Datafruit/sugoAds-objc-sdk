@@ -10,4 +10,8 @@
 
 @implementation SugoAD
 
++(void)text{
+    NSLog(@"这是一个测试方法");
+}
+
 @end
